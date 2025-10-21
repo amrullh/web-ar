@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+<body style="margin: 0px; overflow: hidden;">
+
+    <a-scene embedded vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;">
+
+        <a-camera gps-camera rotation-reader></a-camera>
+
+        <a-marker type="pattern" url="pola.patt">
+
+            <a-entity gltf-model="url(ekosistem.glb)" scale="0.1 0.1 0.1" rotation="-90 0 0"
+                position="0 0.5 0"></a-entity>
+
+        </a-marker>
+    </a-scene>
+</body>
+
+</html>
