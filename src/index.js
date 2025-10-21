@@ -1,13 +1,17 @@
-// Lokasi File: src/index.js
+// Lokasi File: src/App.js
 
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import ARScanner from '../web-ar-sungai/src/components/ARScanner';
+import './App.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
-);
+function App() {
+  return (
+    <div className="App">
+      {/* Merender komponen AR Scanner */}
+      <ARScanner />
+    </div>
+  );
+}
+
+export default App;
 
